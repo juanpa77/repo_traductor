@@ -5,7 +5,7 @@
 function prueba() {
     console.log(inputPalabra)
 }
-/*document.addEventListener("keypress", function (event) {
+document.addEventListener("keypress", function (event) {
     // let keycode = event.keyCode;
      if (!keyPressed) {
        presseLetter = event.key;
@@ -24,7 +24,7 @@ function prueba() {
     }
     //console.log(keycode);
   },false
-  );*/
+  );
     
 
 
