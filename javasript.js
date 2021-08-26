@@ -35,11 +35,19 @@ const palabraAleatoria = ()=> {
   // Generar a WORD al presionar button y guarda actoualiza la variable randomWord 
   button.addEventListener('click', ()=> {
     
+<<<<<<< HEAD
+=======
+    //if(contenedorWord.hasChildNodes){contenedorWord.parentNode.removeChild(contenedorWord.lastChild)};
+>>>>>>> 1b31f5e (V 1.0)
     randomWord = palabraAleatoria();
     console.log(randomWord);
     let key = Object.keys(palabras).find(key => palabras[key] === randomWord);
     let t = document.createTextNode(key);
+<<<<<<< HEAD
     
+=======
+    console.log(t);
+>>>>>>> 1b31f5e (V 1.0)
     contenedorWord.textContent = t.data;
     //console.log(key);
 

@@ -1,5 +1,6 @@
 
 const verificacion = ()=> { 
+<<<<<<< HEAD
     let arrayTraduccion = [];
     if (inputWord.value == randomWord){
      console.log('Correcto')
@@ -20,6 +21,12 @@ const verificacion = ()=> {
   }
  console.log(arrayTraduccion)
     }
+=======
+
+    if (inputWord.value == randomWord){
+     console.log('Correcto')
+    }
+>>>>>>> 1b31f5e (V 1.0)
     
   }
 
