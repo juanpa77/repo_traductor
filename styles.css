@@ -1,0 +1,16 @@
+.traduccion{
+    position: relative;
+    display: flex;
+}
+
+.incorrecto, .incorrectoFaltaLetra{
+    position: relative;
+    display: inline;
+    background-color: brown;
+}
+
+.word{
+    position: relative;
+    display: inline;
+
+}
