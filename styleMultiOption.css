@@ -1,0 +1,11 @@
+.conteinerOption{
+    display: flex;
+}
+
+.option{
+    position: relative;
+    width: 40px;
+    height: 25px;
+    margin: 10px;
+    background-color: beige;
+}

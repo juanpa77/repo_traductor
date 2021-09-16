@@ -1,6 +1,24 @@
+.layout{
+    padding: 35px;
+    position: relative;
+    width: 350px;
+    height: 200px;
+    
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+
+    background-color: hsl(217, 66%, 51%);
+    border-radius: 7px;
+
+}
+
 .traduccion{
     position: relative;
     display: flex;
+    top: 50px;
+    right: center;
+    
 }
 
 .incorrecto, .incorrectoFaltaLetra{
@@ -11,6 +29,38 @@
 
 .word{
     position: relative;
-    display: inline;
+    height: 30px;
+    width: 180px;
+    padding: 8px;
+    box-sizing: border-box;
+    
+    display: inline-block;
+    border-radius: 10px;
+    background-color:hsl(218, 48%, 13%);
+    
+    text-align: center;
+    color: wheat;
+}
 
+.form{
+    position: relative;
+    
+}
+
+.button{
+    position: relative;
+    width: 80px;
+    height: 25px;
+} 
+ul{
+    list-style-type: none;
+}
+.main{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+
+    width: 420px;
+    background-color: hsl(217, 66%, 51%);
+    border-radius: 10px;
 }
