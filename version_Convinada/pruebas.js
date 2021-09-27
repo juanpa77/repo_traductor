@@ -1,0 +1,2 @@
+generatorStructureTranslatorWord();
+generatorWord();

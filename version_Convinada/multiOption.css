@@ -1,0 +1,12 @@
+.option_item {
+    position: relative;
+    height: 30px;
+    width: 80px;
+    padding: 8px;
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    text-align: center;
+    color: var(--text-color);
+}

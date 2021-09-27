@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="multiOption.css">
+</head>
+<body>
+<header class="header">
+    <div id="toggle-colors" class="colors">
+        <div data-color=" hsl(214, 84%, 56%)" class="colors__item colors__item--blue"></div>
+        <div data-color="hsl(150, 84%, 56%)" class="colors__item colors__item--green"></div>
+        <div data-color="hsl(276, 84%, 56%)" class="colors__item colors__item--purple"></div>
+        <div data-color="hsl(46, 84%, 56%)" class="colors__item colors__item--orange"></div>
+      </div>
+</header>
+    <div class="layout" id="layout">
+        <button id="iniciar">Iniciar</button>        
+    </div>
+    <template id="multiOption">
+        <h2>Elije la correcta</h2>
+
+        <div id="word" class="word"></div>
+        <div class="option" id="option">
+            
+            <div class="option_item" id="option1"></div>
+            <div class="option_item" id="option2"></div>
+            <div class="option_item" id="option3"></div>
+            <div class="option_item" id="option4"></div>
+        
+        </div>
+    </template>
+    <template id="templateTranslateWord">
+
+        <div id="word" class="word"></div>
+        <button id="button" class="button">Presione</button>
+        
+        <div class="form">
+            <label for="traduccion">Ingrese la traduccion</label>
+            <input type="text" name="traduccion" autofocus="autofocus" id="inputTraduccion">
+        </div>
+        <button id="submit">Enviar</button>
+        
+        
+        <div id="traduccion" class="traduccion"></div>
+        <div id="correcto"></div>
+    </template>
+    
+    <script src="palabrasCategorias.js"></script>
+    <script src="multiOption.js"></script>
+    <script src="verificacionWord.js"></script>    
+    <script src="trauceLaPalabra.js"></script>
+    <script src="main.js"></script>
+    <!-- <script src="pruebas.js"></script> -->
+</body>
+</html>

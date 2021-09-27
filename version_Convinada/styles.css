@@ -1,0 +1,96 @@
+:root{
+    --primary-color :hsl(214, 84%, 56%);
+    --text-color: hsl(0, 0%, 31%);
+    --bg-color: hsl(0, 0%, 90%);
+    --headings-color: hsl(0, 0%, 57%);
+    --bg-layout-color: hsl(0, 0%, 98%);
+    --transition: color 0.1s, background-color 0.2s ease-in-out;
+    --box-shadow: 5px 0 15px rgb(0 0 0 / 0.2);
+    --border-radius: 0.4em;
+}
+body {
+    background-color: var(--bg-color)
+}
+.layout{
+    padding: 35px;
+    position: relative;
+    width: 350px;
+    height: 200px;
+    
+    display: block;
+    margin: 0 auto;
+
+    background-color: var(--bg-layout-color);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+
+}
+
+.traduccion{
+    position: relative;
+    display: flex;
+    top: 50px;
+    right: center;
+    
+}
+
+.incorrecto, .incorrectoFaltaLetra{
+    position: relative;
+    display: inline;
+    background-color: brown;
+}
+
+.word{
+    position: relative;
+    height: 30px;
+    width: 180px;
+    padding: 8px;
+    box-sizing: border-box;
+    
+    display: inline-block;
+    border-radius: 10px;
+    background-color:var(--primary-color);
+    
+    text-align: center;
+    color: var(--text-color);
+}
+
+.form{
+    position: relative;
+    
+}
+
+.button{
+    position: relative;
+    width: 80px;
+    height: 25px;
+} 
+ul{
+    list-style-type: none;
+}
+.main{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+
+    width: 420px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.correcto{
+    position: relative;
+    top: 50px;
+    left: 15px;
+    height: 30px;
+    width: 180px;
+    padding: 8px;
+    box-sizing: border-box;
+    
+    display: inline-block;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    
+    text-align: center;
+    color: var(--text-color);
+}
