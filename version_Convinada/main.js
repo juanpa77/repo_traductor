@@ -1,6 +1,8 @@
 let $layout = document.getElementById('layout');
 const buttonGeneradorWord = document.getElementById('button');
-const buttonIniciar = document.getElementById("iniciar")
+const buttonIniciar = document.getElementById("iniciar");
+const rootStyles = document.documentElement.style;
+const $toggleColors = document.getElementById('toggle-colors');
 
 let randomWord;
 let arrayRandomWord;
@@ -72,6 +74,10 @@ const transition= (aciertos)=>{
       if (e.target.matches("#submit")) {
          verificacion();
       }
+   })
+   
+$toggleColors.addEventListener("click", (e)=>{
+      rootStyles.setProperty("--primary-color", e.target.dataset.color);
 })
 
 iniciar()

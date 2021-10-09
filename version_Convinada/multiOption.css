@@ -1,12 +1,22 @@
+.option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .option_item {
-    position: relative;
+    /* position: relative; */
     height: 30px;
-    width: 80px;
+    width: 100%;
     padding: 8px;
+    margin: 4px;
     box-sizing: border-box;
     display: inline-block;
     border-radius: 10px;
     background-color: var(--primary-color);
     text-align: center;
     color: var(--text-color);
+    cursor: pointer;
 }
+
+

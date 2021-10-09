@@ -25,7 +25,6 @@ const option = ()=>{
 const verificaccionMultiOption = (wordCorrecta)=>{
    if (randomWord == wordCorrecta) {
       console.log("correcto");
-      //arrayWordCorrecta.push(randomWord);
       console.log(arrayWordCorrecta);
       if (arrayWordCorrecta.length == aciertos) {
          transition(aciertos)
