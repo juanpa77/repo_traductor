@@ -1,4 +1,7 @@
+import { clearDom } from "./funciones_auxiliares/clearDom.js";
+
 let selectArrayWord = 0;
+
 const verificacion = ()=> { 
     const contenedorTraduccion = document.getElementById("traduccion");
     const $correcto = document.getElementById("correcto");
