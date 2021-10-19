@@ -1,6 +1,6 @@
-
 const verbos = {
-    aceptar:['accept',0],
+    
+    aceptar:['accept',0],	
     salir_marcharse:['leave',0],
     preguntar:['ask',0],	
     escuchar:['listen',0],
@@ -10,7 +10,7 @@ const verbos = {
     mirar:['look',0],
     hacerse:['become',0],	
     perder:['lose',0],
-    creer:['believe',0],
+    creer:['believe',0],	
     hacer:['make',0],
     romper:['break',0],	
     conocer:['meet',0],

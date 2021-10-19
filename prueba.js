@@ -5,11 +5,7 @@
 function prueba() {
     console.log(inputPalabra)
 }
-<<<<<<< HEAD
 document.addEventListener("keypress", function (event) {
-=======
-/*document.addEventListener("keypress", function (event) {
->>>>>>> 1b31f5e (V 1.0)
     // let keycode = event.keyCode;
      if (!keyPressed) {
        presseLetter = event.key;
@@ -28,11 +24,9 @@ document.addEventListener("keypress", function (event) {
     }
     //console.log(keycode);
   },false
-<<<<<<< HEAD
+
+  
   );
-=======
-  );*/
->>>>>>> 1b31f5e (V 1.0)
     
 
 
@@ -45,3 +39,49 @@ document.addEventListener("keypress", function (event) {
     }
     
   }
+  let $layout = document.getElementById('layout');
+const templatetranslatorWord = document.getElementById('templateTranslateWord');
+
+ const createDiv = (contenedor, nameClass)=>{
+    let div = document.createElement('div');
+    contenedor.appendChild(div);
+    div.className = nameClass;
+    div.id = nameClass;
+ }
+
+ const createFrom = (contenedor,nameClass)=> {
+    let from = document.createElement('form');
+    let label = document.createElement('label');
+    let input = document.createElement('input');
+    let inputButton = document.createElement('button');
+
+    contenedor.appendChild(from);
+    from.className = nameClass;
+    from.id = nameClass;
+
+    // Etiqueta label
+    from.appendChild(label); 
+    label.setAttribute('for', 'inputTraduccion');
+    label.textContent = 'ingrese traduccion';
+    
+    //Input 
+    from.appendChild(input);
+    input.setAttribute('for', 'inputTraduccion');
+    input.id = 'inputTraduccion';
+    input.className = 'inputTraduccion';
+    
+    // Boton enviar
+    from.appendChild(inputButton);
+    inputButton.setAttribute('type', 'button');
+    inputButton.setAttribute('value', 'submit');
+    inputButton.id = 'submit';
+    inputButton.textContent = 'enviar';
+ }
+
+ const createElemento =(contenedor, nameClass, element,id)=>{
+    let elemento = document.createElement(element);
+    contenedor.appendChild(elemento);
+    elemento.className = nameClass;
+    elemento.id = id;
+ }
+ 

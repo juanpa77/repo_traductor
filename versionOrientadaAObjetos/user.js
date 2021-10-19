@@ -12,24 +12,20 @@
     }
 
   }
-  const eliminarNodo = ()=>{
-    $correcto.removeChild($correcto.firstChild);
-  }
 
 // Ejecuta verificacion al hacer click en enviar (submit)
-
   let submit = document.getElementById('submit');
- /* submit.addEventListener('click',()=> {
+  submit.addEventListener('click',()=> {
     console.log(inputWord.value);
     verificacion();
-  });*/
-
+  });
+  
   class WriteTranslation{
     constructor(){
       this.randomWord;
     } 
 
-    generatorWord = ()=>{
+    generatorWord () {
       this.randomWord = palabraAleatoria();
       console.log(randomWord);
       let wordEspañol = Object.keys(verbos).find(wordEspañol => verbos[wordEspañol][0] === randomWord); //obtiene key del objeto Palabras

@@ -1,4 +1,4 @@
-const verificacion = ()=> { 
+  const verificacion = ()=> { 
  
     let arrayTraduccion = [];
     let arrayRandomWord = [...randomWord];
@@ -8,11 +8,13 @@ const verificacion = ()=> {
     while (contenedorTraduccion.firstChild) {
       contenedorTraduccion.removeChild(contenedorTraduccion.firstChild)
     }
-    
+    /*if ($correcto.firstChild) {
+      //eliminarNodo()
+    }*/
     for (let i = 0; i < randomWord.length; i++) { 
       let traduccion = document.createElement('div'); // crea DIV 
       contenedorTraduccion.appendChild(traduccion); // aggrega DIV traduccion como hijo de contenedorTraduccion
-      console.log(arrayInputWord[i])
+      //console.log(arrayInputWord[i])
       
       if (arrayRandomWord[i] == arrayInputWord[i]) {
        
@@ -39,11 +41,18 @@ const verificacion = ()=> {
     }
   // Palabra correcta
       if (inputWord.value === randomWord){
-       let correcto = document.createElement('div');
-       correcto.appendChild($from);
-       correcto.setAttribute('class',correcto);
-       correcto.textContent = 'Correcto';
+        let key = Object.keys(verbos).find(key => verbos[key][0] === randomWord);
+        verbos[key][1]++;
+        console.log(verbos[key][1]);
+        let id = 'correcto'; 
+        let correcto = document.createElement('div');
+        $correcto.appendChild(correcto);
+        correcto.setAttribute('class',id);
+        correcto.textContent = 'Correcto';
+        generatorWord();
+        //$correcto.removeChild($correcto.firstChild);
       } else {
-          ayuda()
+          //ayuda()
       }
   }
+

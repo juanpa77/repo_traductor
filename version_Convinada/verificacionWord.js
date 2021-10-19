@@ -1,5 +1,4 @@
 import { clearDom } from "./funciones_auxiliares/clearDom.js";
-
 let selectArrayWord = 0;
 
 const verificacion = ()=> { 
